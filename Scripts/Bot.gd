@@ -104,9 +104,9 @@ func _process(delta):
 #							if firstBot == true:
 							firstBot = false
 					lastCheck = false
-	
-		direction.y += GRAVITY * delta
-		direction = move_and_slide(direction, Vector2(0, -1))
+		if $Sprite.animation != "Appear":
+			direction.y += GRAVITY * delta
+			direction = move_and_slide(direction, Vector2(0, -1))
 	
 		# On a atteind le sol du niveau donc on supprime le robot pour faire apparaitre l'escargot
 		if global_position.y > 550:

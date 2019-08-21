@@ -4,7 +4,7 @@ const BOMB_IDLE_POINTS	 = 100
 const BOMB_ACTIVE_POINTS = 200
 const BONUS_JUMP = 10
 const MAX_BOT = 4
-const BOT_TIMER = 2
+const BOT_TIMER = 3
 
 const SPEED_BIRD 	= Vector2(0.6,0.6)
 const SPEED_ENEMY = Vector2(40,40)

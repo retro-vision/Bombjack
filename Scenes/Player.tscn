@@ -8,22 +8,22 @@
 [ext_resource path="res://Sounds/DRILLBOMBJACK/02 Credit.wav" type="AudioStream" id=6]
 [ext_resource path="res://Sounds/DRILLBOMBJACK/04 Got a Special Coin.wav" type="AudioStream" id=7]
 [ext_resource path="res://Pictures/BJ/BJ-Start.png" type="Texture" id=8]
-[ext_resource path="res://Pictures/BJ/BJ-Down.png" type="Texture" id=9]
-[ext_resource path="res://Pictures/BJ/BJ-DownLeft.png" type="Texture" id=10]
-[ext_resource path="res://Pictures/BJ/BJ-WalkLeft-01.png" type="Texture" id=11]
-[ext_resource path="res://Pictures/BJ/BJ-WalkLeft-02.png" type="Texture" id=12]
-[ext_resource path="res://Pictures/BJ/BJ-Dead-0103.png" type="Texture" id=13]
-[ext_resource path="res://Pictures/BJ/BJ-Dead-0102.png" type="Texture" id=14]
-[ext_resource path="res://Pictures/BJ/BJ-Dead-0104.png" type="Texture" id=15]
-[ext_resource path="res://Pictures/BJ/BJ-Dead-03.png" type="Texture" id=16]
-[ext_resource path="res://Pictures/BJ/BJ-Dead-02.png" type="Texture" id=17]
-[ext_resource path="res://Pictures/BJ/BJ-Dead-01.png" type="Texture" id=18]
-[ext_resource path="res://Pictures/BJ/BJ-UpLeft.png" type="Texture" id=19]
-[ext_resource path="res://Pictures/BJ/BJ-Winner-03.png" type="Texture" id=20]
-[ext_resource path="res://Pictures/BJ/BJ-Winner-01.png" type="Texture" id=21]
-[ext_resource path="res://Pictures/BJ/BJ-Winner-04.png" type="Texture" id=22]
-[ext_resource path="res://Pictures/BJ/BJ-Winner-02.png" type="Texture" id=23]
-[ext_resource path="res://Pictures/BJ/BJ-Up.png" type="Texture" id=24]
+[ext_resource path="res://Pictures/BJ/BJ-WalkLeft-01.png" type="Texture" id=9]
+[ext_resource path="res://Pictures/BJ/BJ-WalkLeft-02.png" type="Texture" id=10]
+[ext_resource path="res://Pictures/BJ/BJ-Down.png" type="Texture" id=11]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-0103.png" type="Texture" id=12]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-0102.png" type="Texture" id=13]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-0104.png" type="Texture" id=14]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-03.png" type="Texture" id=15]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-02.png" type="Texture" id=16]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-01.png" type="Texture" id=17]
+[ext_resource path="res://Pictures/BJ/BJ-UpLeft.png" type="Texture" id=18]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-03.png" type="Texture" id=19]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-01.png" type="Texture" id=20]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-04.png" type="Texture" id=21]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-02.png" type="Texture" id=22]
+[ext_resource path="res://Pictures/BJ/BJ-Up.png" type="Texture" id=23]
+[ext_resource path="res://Pictures/BJ/BJ-DownLeft.png" type="Texture" id=24]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -32,39 +32,39 @@ animations = [ {
 "name": "Start",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "Down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
-"name": "DownDiag",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": false,
 "name": "Dead",
 "speed": 5.5
 }, {
-"frames": [ ExtResource( 19 ) ],
+"frames": [ ExtResource( 18 ) ],
 "loop": true,
 "name": "JumpDiag",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 23 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 22 ) ],
 "loop": true,
 "name": "Winner",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ) ],
+"frames": [ ExtResource( 23 ) ],
 "loop": true,
 "name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "DownDiag",
 "speed": 5.0
 } ]
 

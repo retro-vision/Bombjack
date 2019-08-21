@@ -16,6 +16,12 @@ const respawnPosPlayer	= Vector2(330,258)
 var countBlink = 0 # Compteur de clignotement
 var flagBlink = false # Flag pour alterner le clignotement
 
+func setPlayerPos():
+	position = Vector2(330,258) # Position par défaut
+	# Si position particulière selon le niveau
+	match Constants.level:
+		9: position = Vector2(324,300)
+		
 func launchStart():
 		var startScene = preload('res://Scenes/Start.tscn')
 		var start = startScene.instance()
@@ -25,7 +31,8 @@ func launchStart():
 func _draw():
 	# Lance l'animation de start
 	launchStart()
-	position=respawnPosPlayer
+#	position=respawnPosPlayer
+	setPlayerPos()
 	# Supprime les robots
 	resetAllAliens()
 	# Affiche le score à l'init de la partie
@@ -233,7 +240,7 @@ func _on_Area2D_area_entered(area):
 		collideBombs(area)
 
 func respawnObjects():
-	position = respawnPosPlayer
+#	position = respawnPosPlayer
 	createBird()
 
 func collideBombs(area):
