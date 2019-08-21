@@ -1,0 +1,148 @@
+Gaming History
+Hello coder78 | Set Up | | Log Out
+DATABASE
+SUBMISSIONS
+HISTORY.DAT
+COIN-OP BOY
+Bomb Jack
+Arcade Video game published 35 years ago by Tehkan
+Bomb Jack screenshot
+Listed and emulated in MAME !
+Information for the following ROM(s): bombjack bombjack2
+
+    back
+    information Info
+    musics (15)
+    goodies (1)
+    manuals (3)
+    comments (0)
+    edit Edit
+    upload images Upload
+
+add to favorites
+DESCRIPTION
+Bomb Jack © 1984 Tehkan.
+
+Bomb Jack est un jeu de plateforme en mouvement rapide dans lequel le but est de collecter toutes les bombes à chaque niveau avant de passer à l'autre. Une variété d'ennemis mécaniques qui frayent constamment patrouillent les plates-formes et l'espace aérien de sorte que plus un joueur prend pour recueillir toutes les bombes, plus les progrès devient difficile.
+
+Des bonus de points supplémentaires sont accordés pour la collecte de bombes avec leurs mèches allumés. Une seule bombe peut être allumée à la fois, et la collecte de vingt ou plusieurs de ces bombes allumées sur un niveau donné donnera le plus de bonus au joueur (voir TIPS ET TRICKS pour plus de détails). Jack est poursuivi dans de chaque niveau par les ennemis et quand il se fait tuer, il tombe à la plate-forme la plus proche, toujours l'atterrissage sur sa tête.
+
+Une 'Powerball' apparaît à intervalles semi-réguliers et se déplace en diagonale autour de l'écran. Si le joueur parvient à la saisir, tous les monstres du niveau sont gelés pendant plusieurs secondes et peuvent ensuite être tués en les percucants (semblable à la fonction «Powerpill» dans «Pac-Man»). La collecte des symboles Bonus 'B' augmentera le nombre de points attribués pour la collecte des bombes avec leurs mèches allumés. La sélection d'un symbole 'Extra' donne une vie supplémentaire au joueur, tandis que la capture du symbole 'Spécial' lui donnera un crédit supplémentaire.
+
+Chacun des niveaux de Bomb Jack présente cinq images de fond différentes, dont certaines représentent des monuments historiques célèbres. Ils sont: le Sphinx en Egypte, l'Acropole en Grèce, le château de Neuschwanstein en Bavière, les gratte-ciel et un paysage urbain la nuit. Alors que les arrière-plans eux-mêmes sont répétés au fur et à mesure que le jeu progresse, les mises en page de la plate-forme pour chaque niveau sont complètement différentes. Au moins jusqu'au niveau 18, après quoi les niveaux sont répétés.
+
+La mécanique de jeu de base est la collecte de bombes pour finir un niveau. La fonction powerball, est extrêmement fréquente chez Namco comme "Pac-Man".
+TECHNICAL INFORMATION
+Main CPU : Zilog Z80 (@ 4 Mhz)
+Sound CPU : Zilog Z80 (@ 3.072 Mhz)
+Sound Chips : (3x) General Instrument AY8910 (@ 1.5 Mhz)
+
+Control : 8-way joystick
+Buttons : 1 (JUMP)
+TRIVIA
+Bomb Jack was released in October 1984.
+
+The original idea for Bomb Jack was conceived by Michitaka Tsuruta, lead designer for Guzzler and Solomon's Key, under the supervision of Kazutoshi Ueda, the genius behind Mr. Do, Lady Bug and other Universal coin-ops.
+
+Curiously enough, the infamous Sphinx in the opening round was not rendered by the graphic designer of the game, but by Tsukasa Masuko, the sound designer. Tsuruta-san recalls how roles in Japanese development teams were quite interchangeable, in those early years.
+
+Round 1 music is the ending song from the Japanese animated cartoon series 'Spoon Oba-san', sung by the ultra-popular Mari Ijima (Lynn Minmay's voice in Macross). The anime was aired in 1983... at that time, Bomb Jack development was just starting : something more than a coincidence, then.
+Round 2 features the music of 'Lady Madonna', by The Beatles. Tsuruta-san, recalls that rights were paid for the licensed music at the time; still, later ports (PS2 and Xbox) come with a replaced soundtrack (mostly the Vs. Mighty Bomb Jack score).
+
+"Bomb Jack II" has nothing really to do with Tekhan or Tecmo : it was developed by British Elite Systems for European home computers only, in an attempt to follow the huge success of the Bomb Jack coin-op conversion. They basically bought the license for the name, and then proceeded to create a mediocre maze game.
+
+Giauco Bondavalli holds the official record for this game with 20,010,960 points on November 3, 1984.
+
+Alfa Records released a limited-edition soundtrack album for this game (Tecmo Game Music - 28XA-95) on 25/09/1986.	
+Goodies for Bomb Jack
+Click to see more
+	
+UPDATES
+The older version (set 2) says 'YOU ARE LUCY' instead of 'YOU ARE LUCKY'.
+SCORING
+Sauter, heurter un mur ou tomber d'une plate-forme : 10 points x bonus multiplier value.
+Normal bomb : 100 points x bonus multiplier value.
+Firebomb : 200 points x bonus multiplier value.
+
+(P) Power : 100 when blue, 200 when red, 300 when purple, 500 when green, 800 when cyan, 1,200 when yellow and 2,000 points when grey x bonus multiplier value.
+
+(B) Bonus Multiplier: 1,000 points x bonus multiplier value.
+(E) Extra Life : 1,000 points x bonus multiplier value plus an extra life.
+(S) Special : 1,000 points x bonus multiplier value plus a free credit.
+
+Killing monsters while (P) is active : 100, 200, 300, 500, 800, 1,200 and 2,000 points. These are all multiplied by the current bonus multiplier value.
+
+End of level bonus :
+23 bombes incendiaires désamorcées : 50,000 points.
+22 firebombs : 30,000 points.
+21 firebombs : 20,000 points.
+20 firebombs : 10,000 points.
+TIPS AND TRICKS
+* Un peu d'informations sur l'apparence du powerball : la règle est très simple et il suffit de regarder la couleur à gauche et à droite du nombre de multiplicateurs, sa taille augmente au fur et à mesure que vous collectez des bombes.
+
+1) Prenez une «bombe allumée» et vous obtenez 1 point d'avance pour la prochaine Powerball. Prenez une bombe non allumée et vous obtiendrez 0,5 point pour le prochain Powerball. Lorsque vous atteignez 10 points, le powerball apparaît. Vos points powerball n'augmente pas si la powerball est là ou si la «musique de puissance» joue, alors évitez de collecter des bombes quand il n'est pas nécessaire.
+
+2) La powerball peut avoir des valeurs de score différentes lors de sa prise. Quand il apparaît, sautez ou heurtez un mur et sa couleur change. Les couleurs et les valeurs de score sont bleu (100 points), rouge (200 points), violet (300 points), vert (500 points), turquoize (800 points), jaune (1000 points) et gris (2000 points).
+
+3) La pièce de bonus 'B' ajoute 1 à la valeur du multiplicateur et apparaît chaque 5.000 points, mais seulement si vous 'pass' ces 5.000 points lorsque vous ne prenez pas une pièce de monnaie 'B'. Par exemple, votre multiplicateur est 2x, votre score est de 9.000 et vous prenez une pièce de monnaie 'B'; vous donnant 1 000x2 à 2 000 points, ce qui fait un total de 11 000 points. Une pièce «B» devrait alors apparaître parce que vous avez passé les 10.000 points, mais n'est pas parce que vous avez pris une pièce 'B' pour atteindre ce score de sorte que vous aurez à attendre 15.000 points pour obtenir une nouvelle pièce de monnaie 'B'. La limite de multiplicateur est X5.
+
+* Un élément d'information important à retenir est que vous pouvez ramasser les bombes dans un certain ordre pour gagner un maximum de points. Si vous prenez la plupart des bombes pendant que leurs mèches sont allumés, vous obtenez les bonus suivants :
+20 - 10,000 pts.
+21 - 20,000 pts.
+22 - 30,000 pts.
+23 - 50,000 pts.
+Alors bien sûr, vous aurez envie d'essayer d'obtenir 23 à chaque fois (C'est bien sûr, très difficile!). La pièce de monnaie P (Power) apparaît après que chaque neuvième bombe est collectée. La valeur des points de la pièce P varie de 100 (bleu) à 2 000 (argent). Chaque saut de bombjack provoque un changement des couleurs des pièces, vous pouvez contrôler le niveau de bonus en faisant de petits sauts jusqu'à ce que la pièce prenne la couleur argent.
+
+La pièce B (Bonus) apparaît tous les 5 000 points, et augmente le multiplicateur de bonus de 1. Il y a un maximum de 5 pièces B par niveau.
+
+* Le ramassage de la pièce S (Spécial) accorde un crédit gratuit. Il vous mènera également au niveau suivant automatiquement.
+
+* Vous pouvez contrôler où l'oiseau mécanique apparaît en tenant le joystick dans la direction opposée. Exemple : Tenez le joystick à droite dès que le tour commence et que l'oiseau mécanique apparaît à gauche de l'écran. Si le bâton est tenu en diagonale, l'oiseau apparaît dans le coin opposé.
+
+* Lorsque vous démarrez un niveau, et aller directement à gauche ou à droite, les oiseaux (s) apparaîtront de l'autre côté: il est utile de les mettre où vous voulez afin de rendre ce niveau plus facile, les niveaux 7, 8 et 9 sont de bons exemples pour cela.
+
+SERIES
+1. Bomb Jack (1984, Arcade)
+2. Bomb Jack II (1986, C64)
+3. Mighty Bomb Jack [Model TCF-MB] (1986, Famicom)
+4. Bomb Jack Twin (1993, Arcade)
+STAFF
+Director : Michitaka Tsuruta
+Programmer : Michishito Ishizuka
+Music & Sound Design : Tsukasa Masuko
+Graphic & Character Design : Rie Ishizuka (aka Rie Yatomi)
+Producer : Kazutoshi Ueda
+PORTS
+CONSOLES:
+[JP] Sega SG-1000 (1985) "Bomb Jack [Model C-61]"
+Sega SG-1000 [CN] (198?) "Chaoren"
+[EU] Nintendo Game Boy (1992)
+Nintendo Game Boy Advance (2002) "Bomb Jack World" [Prototype]
+[JP] Sony PS2 (nov.25, 2004) "Tecmo Hit Parade [Model SLPS-20401]"
+[US] Microsoft XBOX (sept.14, 2005) "Tecmo Classic Arcade"
+[EU] Microsoft XBOX (oct.21, 2005) "Tecmo Classic Arcade"
+[JP] Microsoft XBOX (oct.27, 2005) "Tecmo Classic Arcade [Model C6E-0001]"
+[JP] Sony PS4 [PSN] (june.19, 2014) "Arcade Archives - Bomb Jack [Model CUSA-00651]"
+Sony PlayStation 4 [PSN] [US] (aug.18, 2015) "Arcade Archives - Bomb Jack [Model CUSA-00975]"
+
+COMPUTERS:
+NEC PC8801 [JP] (1985)
+Commodore 16 [US] [EU] (1986)
+[US] Commodore C64 [EU] (1986)
+Sinclair ZX Spectrum (1986)
+[EU] Amstrad CPC (1986)
+[EU] Atari ST (1986)
+[EU] Commodore Amiga (1988)
+[EU] Amstrad CPC (1989) "12 Top Amstrad Hits"
+
+OTHERS:
+Mobiles phone [US] [Nokia 3410] (2002)
+SOURCES
+Game's ROM.
+Tsuruta Michitaka's Web Site; http://www.turu3.net
+ 
+More information...
+
+See a full list of products made by Tehkan during their years of activity, or see their graphic timeline representation
+
+

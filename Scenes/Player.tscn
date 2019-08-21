@@ -1,0 +1,115 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/12 Game Over.wav" type="AudioStream" id=2]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/11 Touched an Enemy.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/05 Clear.wav" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/catchBomb.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/02 Credit.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/04 Got a Special Coin.wav" type="AudioStream" id=7]
+[ext_resource path="res://Pictures/BJ/BJ-Start.png" type="Texture" id=8]
+[ext_resource path="res://Pictures/BJ/BJ-Down.png" type="Texture" id=9]
+[ext_resource path="res://Pictures/BJ/BJ-DownLeft.png" type="Texture" id=10]
+[ext_resource path="res://Pictures/BJ/BJ-WalkLeft-01.png" type="Texture" id=11]
+[ext_resource path="res://Pictures/BJ/BJ-WalkLeft-02.png" type="Texture" id=12]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-0103.png" type="Texture" id=13]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-0102.png" type="Texture" id=14]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-0104.png" type="Texture" id=15]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-03.png" type="Texture" id=16]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-02.png" type="Texture" id=17]
+[ext_resource path="res://Pictures/BJ/BJ-Dead-01.png" type="Texture" id=18]
+[ext_resource path="res://Pictures/BJ/BJ-UpLeft.png" type="Texture" id=19]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-03.png" type="Texture" id=20]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-01.png" type="Texture" id=21]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-04.png" type="Texture" id=22]
+[ext_resource path="res://Pictures/BJ/BJ-Winner-02.png" type="Texture" id=23]
+[ext_resource path="res://Pictures/BJ/BJ-Up.png" type="Texture" id=24]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Start",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "DownDiag",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 5.5
+}, {
+"frames": [ ExtResource( 19 ) ],
+"loop": true,
+"name": "JumpDiag",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "Winner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 12.0
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 13.3103, 23.6528 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 336, 260 )
+script = ExtResource( 1 )
+
+[node name="GameOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="DeadSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="WinnerSound" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 4 )
+
+[node name="CatchSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.706
+
+[node name="CatchSoundBonus" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SpecialCoin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Start"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 1 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 1 )
+shape = SubResource( 3 )
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/06 BGM 2.wav-e961627780c21b34c185020f84c402af.sample"
+
+[deps]
+
+source_file="res://Sounds/DRILLBOMBJACK/06 BGM 2.wav"
+dest_files=[ "res://.import/06 BGM 2.wav-e961627780c21b34c185020f84c402af.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

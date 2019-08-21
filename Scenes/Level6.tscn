@@ -1,0 +1,755 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=1]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/03 Ringo no Mori no Koneko Tachi (BGM 1).wav" type="AudioStream" id=2]
+[ext_resource path="res://Pictures/Level01/Background2.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Bombs.gd" type="Script" id=4]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB.png" type="Texture" id=5]
+[ext_resource path="res://Pictures/Bombs/CATCH_BOMB01.png" type="Texture" id=6]
+[ext_resource path="res://Pictures/Bombs/CATCH_BOMB02.png" type="Texture" id=7]
+[ext_resource path="res://Pictures/Bombs/CATCH_BOMB03.png" type="Texture" id=8]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB01.png" type="Texture" id=9]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB02.png" type="Texture" id=10]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB03.png" type="Texture" id=11]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB04.png" type="Texture" id=12]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB05.png" type="Texture" id=13]
+[ext_resource path="res://Pictures/Points/200pts.png" type="Texture" id=14]
+[ext_resource path="res://Pictures/Level03/Tileset.png" type="Texture" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "Catch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "Active",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "CatchBonus",
+"speed": 7.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 18.1325, 17.4483 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 24, 0, 24, 24, 0, 24 )
+
+[sub_resource type="TileSet" id=15]
+0/name = "Tileset.png 0"
+0/texture = ExtResource( 15 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 24, 24 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Tileset.png 1"
+1/texture = ExtResource( 15 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 24, 0, 24, 24 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Tileset.png 2"
+2/texture = ExtResource( 15 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 48, 0, 24, 24 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Tileset.png 3"
+3/texture = ExtResource( 15 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 72, 0, 24, 24 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Tileset.png 4"
+4/texture = ExtResource( 15 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 96, 0, 24, 24 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "Tileset.png 5"
+5/texture = ExtResource( 15 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 24, 24, 24 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "Tileset.png 6"
+6/texture = ExtResource( 15 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 24, 24, 24, 24 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "Tileset.png 7"
+7/texture = ExtResource( 15 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 48, 24, 24, 24 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "Tileset.png 8"
+8/texture = ExtResource( 15 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 72, 24, 24, 24 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "Tileset.png 9"
+9/texture = ExtResource( 15 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 96, 24, 24, 24 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Tileset.png 10"
+10/texture = ExtResource( 15 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 48, 24, 24 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Tileset.png 11"
+11/texture = ExtResource( 15 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 24, 48, 24, 24 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+
+[node name="LevelBase" type="Node2D"]
+position = Vector2( 1, 0 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 160.0 ],
+"_edit_vertical_guides_": [ 120.0 ]
+}
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 323, 300 )
+scale = Vector2( 2.67857, 2.46004 )
+z_index = -1
+z_as_relative = false
+texture = ExtResource( 3 )
+
+[node name="Bombs" type="Node2D" parent="."]
+
+[node name="Bomb0" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 159, 250 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb0"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb0"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb1" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 109, 250 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb1"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb1"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb2" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 49, 250 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb2"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb2"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb3" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 49, 326.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb3"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb3"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb4" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 49, 400.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb4"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb4"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb5" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 49, 476.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb5"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb5"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb6" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 49, 546.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb6"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb6"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb7" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 599, 550 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb7"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb7"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb8" type="Area2D" parent="Bombs"]
+pause_mode = 1
+editor/display_folded = true
+position = Vector2( 599, 476.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb8"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb8"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb9" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 599, 386.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb9"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb9"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb10" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 599, 300 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb10"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb10"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb11" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 599, 216.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb11"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb11"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb12" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 509, 216.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb12"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb12"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb13" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 429, 216.318 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb13"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb13"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb14" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 389, 440 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb14"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb14"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb15" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 329, 440 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb15"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb15"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb16" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 219, 440 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb16"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb16"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb17" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 159, 440 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb17"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb17"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb18" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 389, 94 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb18"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb18"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb19" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 309, 94 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb19"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb19"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb20" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 119, 52.3182 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb20"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb20"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb21" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 49, 52.3182 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb21"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb21"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb22" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 529, 52.3182 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb22"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb22"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="Bomb23" type="Area2D" parent="Bombs"]
+pause_mode = 2
+editor/display_folded = true
+position = Vector2( 599, 52.3182 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bomb" type="AnimatedSprite" parent="Bombs/Bomb23"]
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bombs/Bomb23"]
+visible = false
+position = Vector2( 0, 6.31818 )
+shape = SubResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 15 )
+cell_size = Vector2( 24, 24 )
+format = 1
+tile_data = PoolIntArray( 0, 3, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 4, 0, 65536, 7, 0, 65562, 7, 0, 131072, 7, 0, 131098, 7, 0, 196608, 7, 0, 196634, 7, 0, 262144, 7, 0, 262170, 7, 0, 327680, 7, 0, 327692, 9, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 10, 0, 327706, 7, 0, 393216, 7, 0, 393242, 7, 0, 458752, 7, 0, 458778, 7, 0, 524288, 5, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 10, 0, 524314, 7, 0, 589824, 7, 0, 589850, 7, 0, 655360, 7, 0, 655376, 3, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 655381, 10, 0, 655386, 7, 0, 720896, 7, 0, 720912, 7, 0, 720922, 7, 0, 786432, 7, 0, 786448, 7, 0, 786458, 7, 0, 851968, 7, 0, 851984, 7, 0, 851994, 7, 0, 917504, 7, 0, 917520, 7, 0, 917530, 7, 0, 983040, 7, 0, 983056, 7, 0, 983066, 7, 0, 1048576, 7, 0, 1048582, 9, 0, 1048583, 0, 0, 1048584, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048587, 0, 0, 1048588, 0, 0, 1048589, 0, 0, 1048590, 0, 0, 1048591, 0, 0, 1048592, 2, 0, 1048602, 7, 0, 1114112, 7, 0, 1114138, 7, 0, 1179648, 7, 0, 1179674, 7, 0, 1245184, 7, 0, 1245210, 7, 0, 1310720, 7, 0, 1310746, 7, 0, 1376256, 7, 0, 1376282, 7, 0, 1441792, 7, 0, 1441818, 7, 0, 1507328, 7, 0, 1507354, 7, 0, 1572864, 1, 0, 1572865, 0, 0, 1572866, 0, 0, 1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1572879, 0, 0, 1572880, 0, 0, 1572881, 0, 0, 1572882, 0, 0, 1572883, 0, 0, 1572884, 0, 0, 1572885, 0, 0, 1572886, 0, 0, 1572887, 0, 0, 1572888, 0, 0, 1572889, 0, 0, 1572890, 2, 0 )
+[connection signal="animation_finished" from="Bombs/Bomb0/Bomb" to="Bombs/Bomb0" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb1/Bomb" to="Bombs/Bomb1" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb2/Bomb" to="Bombs/Bomb2" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb3/Bomb" to="Bombs/Bomb3" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb4/Bomb" to="Bombs/Bomb4" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb5/Bomb" to="Bombs/Bomb5" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb6/Bomb" to="Bombs/Bomb6" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb7/Bomb" to="Bombs/Bomb7" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb8/Bomb" to="Bombs/Bomb8" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb9/Bomb" to="Bombs/Bomb9" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb10/Bomb" to="Bombs/Bomb10" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb11/Bomb" to="Bombs/Bomb11" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb12/Bomb" to="Bombs/Bomb12" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb13/Bomb" to="Bombs/Bomb13" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb14/Bomb" to="Bombs/Bomb14" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb15/Bomb" to="Bombs/Bomb15" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb16/Bomb" to="Bombs/Bomb16" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb17/Bomb" to="Bombs/Bomb17" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb18/Bomb" to="Bombs/Bomb18" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb19/Bomb" to="Bombs/Bomb19" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb20/Bomb" to="Bombs/Bomb20" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb21/Bomb" to="Bombs/Bomb21" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb22/Bomb" to="Bombs/Bomb22" method="_on_Bomb_animation_finished"]
+[connection signal="animation_finished" from="Bombs/Bomb23/Bomb" to="Bombs/Bomb23" method="_on_Bomb_animation_finished"]

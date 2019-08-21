@@ -1,0 +1,10 @@
+
+   * L'oiseau suit une grille qui à chaque intersection de lignes et de colonnes imaginaires permettra à celui-ci de se rapprocher du joueur (sauf quelques cas particuliers, par exemple lorsque l'oiseau est collé à une paroi qui se trouve entre lui et le joueur).
+
+   * La boule grise suit un mouvement vertical de vitesse constante, et un mouvement horizontal de vitesse variable la faisant se rapprocher du joueur en accélérant horizontalement. Son mouvement vertical est inversé lorsque la boule grise touche une paroi.
+
+   * La boule noire suit un mouvement horizontal de vitesse constante, et un mouvement vertical de vitesse variable la faisant accélérer verticalement vers le niveau où se trouve le joueur. Son mouvement horizontal est inversé lorsque la boule noire touche une paroi.
+
+   * La soucoupe volante suit une direction invariable jusqu'à ce qu'elle touche une paroi, elle se dirige alors vers Bomb Jack à une vitesse en rapport avec la distance qui sépare le point d'impact sur la paroi et la position où se trouve Bomb Jack au moment de cet impact.
+
+   * L'"escargot" (une tête avec une sorte de chapeau pointu ressemblant à une coquille d'escargot ou de coquillage) ira toujours en direction du joueur, mais son accélération vers le joueur sera limité par une inertie.
