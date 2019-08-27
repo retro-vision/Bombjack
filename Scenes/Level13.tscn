@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Level.gd" type="Script" id=1]
-[ext_resource path="res://Sounds/DRILLBOMBJACK/10 Lady Madonna (BGM 3).wav" type="AudioStream" id=2]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/06 BGM 2.wav" type="AudioStream" id=2]
 [ext_resource path="res://Pictures/Level03/Background2.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Bombs.gd" type="Script" id=4]
 [ext_resource path="res://Pictures/Bombs/TILE_ABOMB.png" type="Texture" id=5]
