@@ -8,12 +8,12 @@
 [ext_resource path="res://Pictures/Bombs/CATCH_BOMB01.png" type="Texture" id=6]
 [ext_resource path="res://Pictures/Bombs/CATCH_BOMB02.png" type="Texture" id=7]
 [ext_resource path="res://Pictures/Bombs/CATCH_BOMB03.png" type="Texture" id=8]
-[ext_resource path="res://Pictures/Points/200pts.png" type="Texture" id=9]
-[ext_resource path="res://Pictures/Bombs/TILE_ABOMB01.png" type="Texture" id=10]
-[ext_resource path="res://Pictures/Bombs/TILE_ABOMB02.png" type="Texture" id=11]
-[ext_resource path="res://Pictures/Bombs/TILE_ABOMB03.png" type="Texture" id=12]
-[ext_resource path="res://Pictures/Bombs/TILE_ABOMB04.png" type="Texture" id=13]
-[ext_resource path="res://Pictures/Bombs/TILE_ABOMB05.png" type="Texture" id=14]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB01.png" type="Texture" id=9]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB02.png" type="Texture" id=10]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB03.png" type="Texture" id=11]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB04.png" type="Texture" id=12]
+[ext_resource path="res://Pictures/Bombs/TILE_ABOMB05.png" type="Texture" id=13]
+[ext_resource path="res://Pictures/Points/200pts.png" type="Texture" id=14]
 [ext_resource path="res://Pictures/Level01/tileset.tres" type="TileSet" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -28,15 +28,15 @@ animations = [ {
 "name": "Catch",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ) ],
-"loop": false,
-"name": "CatchBonus",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "Active",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "CatchBonus",
+"speed": 7.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
