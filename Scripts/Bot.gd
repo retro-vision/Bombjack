@@ -101,8 +101,8 @@ func _process(delta):
 								timer.start(Constants.BOT_TIMER)
 								Constants.nbRobot += 1
 								Constants.reTimer = true
-#							if firstBot == true:
-							firstBot = false
+							if test_move(transform, position) == true:
+								firstBot = false
 					lastCheck = false
 		if $Sprite.animation != "Appear":
 			direction.y += GRAVITY * delta

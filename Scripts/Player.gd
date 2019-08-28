@@ -104,27 +104,28 @@ func get_input():
 		# Super jump
 		if up:
 			velocity.y = JUMP_SPEED*1.7
-		# stadard jump
+		# standard jump
 		else:
 			velocity.y = JUMP_SPEED*1.2
 	else:
 		# Redescend si on relache le saut
 		if jump_release:
 			if velocity.y < 0:
-				velocity.y += 200
+				velocity.y += 1000
 			
 		# Ralentissement à la descente
 		if not velocity.y < 0 and jump:
-			velocity.y -= 300
-			# empeche le joueur de remonter. Controle la descente
-	#		if velocity.y < 0:
-	#			velocity.y =- 50
+#			velocity.y -= 300
+			velocity.y -= 500
+			# empeche le joeur de remonter. Controle la descente
+#			if velocity.y < 0:
+#				velocity.y -= 30
 			nextPowerballColor()
 			update_score(Constants.BONUS_JUMP*Constants.bonusFactor)
 			
 		# Controle la vitesse de la descente
-		if velocity.y > 200:
-			velocity.y = 150
+		if velocity.y > 250:
+			velocity.y = 200
 			
 	velocity.x = -int(left)+int(right)
 
@@ -374,7 +375,6 @@ func enemyToBonus():
 	initPBTimer()
 	
 func collideAliens(area):
-	if Constants.cheat == false:
 		# Collision avec les ennemis
 		var parent = area.get_parent().get_node('Sprite').animation
 	
@@ -382,34 +382,34 @@ func collideAliens(area):
 			if countBlink == 0:
 				catchBonus(area.get_parent())
 		else:
-	
-			if Constants.PLAY_SOUND == true:
-				$DeadSound.play()
-				var zic = get_node('/root/Game/Levels/Level'+str(Constants.level)+'/Music')
-				zic.stop()
-				zic = get_node('/root/Game/Bonus/PowerBallP/PowerballSound')
-				if zic != null:
+			if Constants.cheat == false:
+				if Constants.PLAY_SOUND == true:
+					$DeadSound.play()
+					var zic = get_node('/root/Game/Levels/Level'+str(Constants.level)+'/Music')
 					zic.stop()
-				$SpecialCoin.stop()
-			# Désactivation de la bombe
-			var node = get_node('/root/Game/Levels/Level'+str(Constants.level)+'/Bombs/')
-			for item in node.get_children():
-				if item.get_child(0).animation == 'Active':
-					item.get_child(0).play('Idle')
-					break
-			# Animation du joueur mort
-			$Sprite.play('Dead')
-			pause_mode = Node.PAUSE_MODE_PROCESS
-			get_tree().paused = true
-			Constants.lives -= 1
-			Constants.dontMoveEnemy = false
-			Constants.bonusFireBombs = 0
-			Constants.powerballPoint = 0
-			Constants.powerballActive = false
-			Constants.deadBird = true # Pour recréer l'oiseau
-			Constants.reTimer = true
-			# Vide le tableau de backup
-			animBackup={}
+					zic = get_node('/root/Game/Bonus/PowerBallP/PowerballSound')
+					if zic != null:
+						zic.stop()
+					$SpecialCoin.stop()
+				# Désactivation de la bombe
+				var node = get_node('/root/Game/Levels/Level'+str(Constants.level)+'/Bombs/')
+				for item in node.get_children():
+					if item.get_child(0).animation == 'Active':
+						item.get_child(0).play('Idle')
+						break
+				# Animation du joueur mort
+				$Sprite.play('Dead')
+				pause_mode = Node.PAUSE_MODE_PROCESS
+				get_tree().paused = true
+				Constants.lives -= 1
+				Constants.dontMoveEnemy = false
+				Constants.bonusFireBombs = 0
+				Constants.powerballPoint = 0
+				Constants.powerballActive = false
+				Constants.deadBird = true # Pour recréer l'oiseau
+				Constants.reTimer = true
+				# Vide le tableau de backup
+				animBackup={}
 
 # Supprime tous les aliens sauf l'oiseau
 func resetAllAliens():
