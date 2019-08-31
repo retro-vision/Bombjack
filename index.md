@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+# BOMBJACK Arcade Remake
 
-You can use the [editor on GitHub](https://github.com/drill40/Bombjack/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Remake par:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![](http://coder.free.fr/images/retrovision1-retail.png)
 
-### Markdown
+# Screenshots
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![](http://coder.free.fr/images/bombjack1.jpeg)  
+            
+![](http://coder.free.fr/images/bombjack2.png)    
+          
+![](http://coder.free.fr/images/bombjack3.jpeg) 
+             
+![](http://coder.free.fr/images/bombjack4.jpeg)  
+            
+![](http://coder.free.fr/images/bombjack5.jpeg)              
 
-```markdown
-Syntax highlighted code block
+#  Règles du jeu
 
-# Header 1
-## Header 2
-### Header 3
+ Prendre les toutes les bombes pour finir le niveau.
+ Prendre dix bombes allumées de suite fera apparaître la powerball.
+ Durant la powerball, chaque saut change la couleur de la powerball.
+ 
+**A chaque couleur, correspond un bonus:**
+* **Bleu**   = **100**  x Bonus Factor
+* **Rouge**  = **200**  x Bonus Factor
+* **Violet** = **300**  x Bonus Factor
+* **Vert**   = **500**  x Bonus Factor
+* **Cyan**   = **800**  x Bonus Factor
+* **Jaune**  = **1200** x Bonus Factor
+* **Gris**   = **2000** x Bonus Factor
 
-- Bulleted
-- List
+ Prendre une bombe allumée = **200** points x Bonus Factor
+ Prendre une bombe éteinte = **100** points x Bonus Factor
+ 
+ Si à la fin du niveau, vous avez pris un certain nombre de bombes allumée, vous aurez droit à un bonus :
+ * **20** bombes allumées = **10 000** points.
+ * **21** bombes allumées = **20 000** points.
+ * **22** bombes allumées = **30 000** points.
+ * **23** bombes allumées = **50 000** points.
 
-1. Numbered
-2. List
+#  LES  BONUS
 
-**Bold** and _Italic_ and `Code` text
+##   Le facteur multiplicateur
+  
+  Tous les bonus ainsi que les valeurs des bombes sont augmenté du "Bonus Factor"
+  Au début de la partie le Factor Bonus est fixé à 1.
+  A chaque fois que vous attrapez le bonus B, cela augment le Bonus Factor de 1 et ce jusqu'à 5 maximum
+ 
+##   Liste des bonus
+  
+  **Bonus "P"** : Affiche la powerball
+  **Bonus "E"** : Donne une vie supplémentaire. Augmente le score de 1000 points
+  **Bonus "B"** : Augmente le Bonus Factor de 1. Augmente le score de 1000 points
+  **Bonus "S"** : Augmente le Bonus Factor de 1 et ajoute un crédit. Augmente le score de 1000 points
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+ # Bombjack
 
-### Jekyll Themes
+ ## Controles
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/drill40/Bombjack/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ Flèche Gauche pour diriger le Bombjack à gauche
+ Flèche Droite pour diriger le Bombjack à droite
+ Espace pour faire sauter   le Bombjack ( et plusieurs fois espace pour faire voler bombjack)
+ Flèche Haut plus Espace provoque un super saut du Bombjack
+ 
+ A chaque vol de bombjack (appuyer plusieurs fois sur la touche espace lorsque Bombjack a sauté, permet de voler) le score augmente de 10 points.
+ 
+ Mode Fullscreen disponible en appuyant sur la touche "F" dans le menu du jeu.
+ 
