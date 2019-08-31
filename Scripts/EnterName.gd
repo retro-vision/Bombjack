@@ -13,6 +13,7 @@ func _ready():
 	timer.start(0.1)
 	# Affiche le score
 	$Score.set_text('%08d'%(Constants.score))
+	$Music.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

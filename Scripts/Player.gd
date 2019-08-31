@@ -62,6 +62,7 @@ func get_input():
 	var left 	= Input.is_action_pressed('ui_left')
 	var jump 	= Input.is_action_just_pressed('ui_select')
 	var jump_release = Input.is_action_just_released('ui_select')
+
 	
 	# On monte droit
 	if velocity.y < 0 and left:
