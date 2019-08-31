@@ -5,7 +5,7 @@ Remake par:
 ![](http://coder.free.fr/images/retrovision1-retail.png)
 
 # Screenshots
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
 ![](http://coder.free.fr/images/bombjack1.jpeg)  
             
 ![](http://coder.free.fr/images/bombjack2.png)    
