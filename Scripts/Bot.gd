@@ -97,6 +97,7 @@ func _process(delta):
 						if firstBot == true:
 							print('Bot Tombe')
 							if Constants.nbRobot < Constants.MAX_BOT:
+								print('Retimer BOT')
 								var timer = get_node('/root/Game/Levels/Level'+str(Constants.level)+'/timer')
 								timer.start(Constants.BOT_TIMER)
 								Constants.nbRobot += 1

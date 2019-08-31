@@ -277,7 +277,7 @@ position = Vector2( 1, 0 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
-"_edit_vertical_guides_": [  ]
+"_edit_vertical_guides_": [ 280.0 ]
 }
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
