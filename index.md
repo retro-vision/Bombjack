@@ -56,9 +56,9 @@ Gris   = 2000 x Bonus Factor</code></pre>
   **Bonus "S"** : Augmente le Bonus Factor de 1 et ajoute un crédit. Augmente le score de 1000 points</br>
 
 
- # Bombjack
+# Bombjack
 
- ## Controles
+## Controles
 
  ![](http://coder.free.fr/images/github/left.png) Dirige Bombjack à gauche</br>
  ![](http://coder.free.fr/images/github/right.png) Dirige Bombjack à droite</br>
