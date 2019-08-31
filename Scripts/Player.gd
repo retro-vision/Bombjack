@@ -22,6 +22,7 @@ func setPlayerPos():
 	match Constants.level:
 		9: position = Vector2(324,300)
 		16: position = Vector2(280,300)
+		20: position = Vector2(280,300)
 		
 func launchStart():
 		var startScene = preload('res://Scenes/Start.tscn')
