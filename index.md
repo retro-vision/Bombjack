@@ -50,10 +50,10 @@ Gris   = 2000 x Bonus Factor</code></pre>
  
 ##   Liste des bonus
   
-  **Bonus "P"** : Affiche la powerball</br>
-  **Bonus "E"** : Donne une vie supplémentaire. Augmente le score de 1000 points</br>
-  **Bonus "B"** : Augmente le Bonus Factor de 1. Augmente le score de 1000 points</br>
-  **Bonus "S"** : Augmente le Bonus Factor de 1 et ajoute un crédit. Augmente le score de 1000 points</br>
+* **Bonus "P"** : Affiche la powerball</br>
+* **Bonus "E"** : Donne une vie supplémentaire. Augmente le score de 1000 points</br>
+* **Bonus "B"** : Augmente le Bonus Factor de 1. Augmente le score de 1000 points</br>
+* **Bonus "S"** : Augmente le Bonus Factor de 1 et ajoute un crédit. Augmente le score de 1000 points</br>
 
 
 # Bombjack
