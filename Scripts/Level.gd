@@ -81,6 +81,9 @@ func setBotPos():
 		55: Constants.botInitPos = Vector2(190,200)
 		56: Constants.botInitPos = Vector2(180,170)
 		57: Constants.botInitPos = Vector2(290,92)
+		58: Constants.botInitPos = Vector2(120,160)
+		59: Constants.botInitPos = Vector2(156,120)
+		60: Constants.botInitPos = Vector2(200,100)
 		
 func createBird():
 	var birdScene=preload('res://Scenes/Bird.tscn')
