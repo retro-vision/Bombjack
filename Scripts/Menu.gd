@@ -78,8 +78,8 @@ func _ready():
 	else:
 		Constants.PLAY_SOUND = true
 	# Initialation des variables
-	Constants.level	= 21 # Niveau courant
-	Constants.score	= 0 # Score b
+	Constants.level	= 1 # Niveau courant
+	Constants.score	= 0 # Score
 	Constants.lives	= 3 # Total des vies
 	Constants.NbBombs	= 0 # Nombres de bombes gobées
 	Constants.nbRobot	= 1 # Compteur d'apparition des robots

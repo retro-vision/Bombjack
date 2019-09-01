@@ -23,6 +23,11 @@ func setPlayerPos():
 		9: position = Vector2(324,300)
 		16: position = Vector2(280,300)
 		20: position = Vector2(280,300)
+		34: position = Vector2(280,300)
+		36: position = Vector2(324,300)
+		48: position = Vector2(324,300)
+		52: position = Vector2(280,300)
+
 		
 func launchStart():
 		var startScene = preload('res://Scenes/Start.tscn')

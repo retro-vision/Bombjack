@@ -162,7 +162,6 @@ align = 1
 [node name="AnimatedSprite" type="AnimatedSprite" parent="UI"]
 position = Vector2( 396.215, 122.864 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="Sprite" type="Sprite" parent="UI"]
