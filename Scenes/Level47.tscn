@@ -1,8 +1,8 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Level.gd" type="Script" id=1]
-[ext_resource path="res://Sounds/DRILLBOMBJACK/06 BGM 2.wav" type="AudioStream" id=2]
-[ext_resource path="res://Pictures/Level05/Background2.png" type="Texture" id=3]
+[ext_resource path="res://Sounds/DRILLBOMBJACK/10 Lady Madonna (BGM 3).wav" type="AudioStream" id=2]
+[ext_resource path="res://Pictures/Level02/Background2.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Bombs.gd" type="Script" id=4]
 [ext_resource path="res://Pictures/Bombs/TILE_ABOMB.png" type="Texture" id=5]
 [ext_resource path="res://Pictures/Bombs/CATCH_BOMB01.png" type="Texture" id=6]
@@ -14,7 +14,7 @@
 [ext_resource path="res://Pictures/Bombs/TILE_ABOMB04.png" type="Texture" id=12]
 [ext_resource path="res://Pictures/Bombs/TILE_ABOMB05.png" type="Texture" id=13]
 [ext_resource path="res://Pictures/Points/200pts.png" type="Texture" id=14]
-[ext_resource path="res://Pictures/Level05/tileset.tres" type="TileSet" id=15]
+[ext_resource path="res://Pictures/Level02/tileset.tres" type="TileSet" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -65,7 +65,7 @@ editor/display_folded = true
 
 [node name="Bomb0" type="Area2D" parent="Bombs"]
 pause_mode = 2
-position = Vector2( 511, 290.318 )
+position = Vector2( 415.741, 383.722 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -83,7 +83,7 @@ shape = SubResource( 2 )
 [node name="Bomb1" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 511, 358.318 )
+position = Vector2( 415.741, 306.318 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -101,7 +101,7 @@ shape = SubResource( 2 )
 [node name="Bomb2" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 511, 432 )
+position = Vector2( 415.741, 226.318 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -119,7 +119,7 @@ shape = SubResource( 2 )
 [node name="Bomb3" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 599, 432 )
+position = Vector2( 249, 226.318 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -137,7 +137,7 @@ shape = SubResource( 2 )
 [node name="Bomb4" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 599, 494.318 )
+position = Vector2( 249, 306.318 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -155,7 +155,7 @@ shape = SubResource( 2 )
 [node name="Bomb5" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 599, 552 )
+position = Vector2( 249, 383.722 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -173,7 +173,7 @@ shape = SubResource( 2 )
 [node name="Bomb6" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 175, 552 )
+position = Vector2( 415.741, 94.3182 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -191,7 +191,7 @@ shape = SubResource( 2 )
 [node name="Bomb7" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 111, 552 )
+position = Vector2( 469, 94.3182 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -209,7 +209,7 @@ shape = SubResource( 2 )
 [node name="Bomb8" type="Area2D" parent="Bombs"]
 pause_mode = 1
 editor/display_folded = true
-position = Vector2( 47, 552 )
+position = Vector2( 519, 94.3182 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -227,7 +227,7 @@ shape = SubResource( 2 )
 [node name="Bomb9" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 455, 56 )
+position = Vector2( 45, 140 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -245,7 +245,7 @@ shape = SubResource( 2 )
 [node name="Bomb10" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 527, 56 )
+position = Vector2( 45, 210 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -263,7 +263,7 @@ shape = SubResource( 2 )
 [node name="Bomb11" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 599, 56 )
+position = Vector2( 45, 282.318 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -281,7 +281,7 @@ shape = SubResource( 2 )
 [node name="Bomb12" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 511, 216 )
+position = Vector2( 99, 383.722 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -299,7 +299,7 @@ shape = SubResource( 2 )
 [node name="Bomb13" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 599, 216 )
+position = Vector2( 99, 470 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -317,7 +317,7 @@ shape = SubResource( 2 )
 [node name="Bomb14" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 599, 152 )
+position = Vector2( 99, 550 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -335,7 +335,7 @@ shape = SubResource( 2 )
 [node name="Bomb15" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 399, 152 )
+position = Vector2( 249, 94.3182 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -353,7 +353,7 @@ shape = SubResource( 2 )
 [node name="Bomb16" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 335, 152 )
+position = Vector2( 189, 94.3182 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -371,7 +371,7 @@ shape = SubResource( 2 )
 [node name="Bomb17" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 271, 152 )
+position = Vector2( 129, 94.3182 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -389,7 +389,7 @@ shape = SubResource( 2 )
 [node name="Bomb18" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 45.7723, 107.683 )
+position = Vector2( 609, 140 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -407,7 +407,7 @@ shape = SubResource( 2 )
 [node name="Bomb19" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 47, 48 )
+position = Vector2( 609, 210 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -425,7 +425,7 @@ shape = SubResource( 2 )
 [node name="Bomb20" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 47, 168 )
+position = Vector2( 609, 282.318 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -443,7 +443,7 @@ shape = SubResource( 2 )
 [node name="Bomb21" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 143, 244 )
+position = Vector2( 549, 383.722 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -461,7 +461,7 @@ shape = SubResource( 2 )
 [node name="Bomb22" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 143, 312 )
+position = Vector2( 549, 470 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -479,7 +479,7 @@ shape = SubResource( 2 )
 [node name="Bomb23" type="Area2D" parent="Bombs"]
 pause_mode = 2
 editor/display_folded = true
-position = Vector2( 143, 384 )
+position = Vector2( 549, 550 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -498,7 +498,7 @@ shape = SubResource( 2 )
 tile_set = ExtResource( 15 )
 cell_size = Vector2( 24, 24 )
 format = 1
-tile_data = PoolIntArray( 0, 3, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 4, 0, 65536, 7, 0, 65562, 7, 0, 131072, 7, 0, 131098, 7, 0, 196608, 7, 0, 196634, 7, 0, 262144, 7, 0, 262170, 7, 0, 327680, 7, 0, 327706, 7, 0, 393216, 7, 0, 393242, 7, 0, 458752, 7, 0, 458778, 7, 0, 524288, 7, 0, 524314, 7, 0, 589824, 7, 0, 589850, 7, 0, 655360, 7, 0, 655386, 7, 0, 720896, 7, 0, 720922, 7, 0, 786432, 7, 0, 786458, 7, 0, 851968, 7, 0, 851994, 7, 0, 917504, 7, 0, 917530, 7, 0, 983040, 7, 0, 983066, 7, 0, 1048576, 7, 0, 1048602, 7, 0, 1114112, 7, 0, 1114138, 7, 0, 1179648, 7, 0, 1179674, 7, 0, 1245184, 7, 0, 1245210, 7, 0, 1310720, 7, 0, 1310746, 7, 0, 1376256, 7, 0, 1376282, 7, 0, 1441792, 7, 0, 1441818, 7, 0, 1507328, 7, 0, 1507354, 7, 0, 1572864, 1, 0, 1572865, 0, 0, 1572866, 0, 0, 1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1572879, 0, 0, 1572880, 0, 0, 1572881, 0, 0, 1572882, 0, 0, 1572883, 0, 0, 1572884, 0, 0, 1572885, 0, 0, 1572886, 0, 0, 1572887, 0, 0, 1572888, 0, 0, 1572889, 0, 0, 1572890, 2, 0 )
+tile_data = PoolIntArray( 0, 3, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 4, 0, 65536, 7, 0, 65562, 7, 0, 131072, 7, 0, 131098, 7, 0, 196608, 7, 0, 196634, 7, 0, 262144, 7, 0, 262170, 7, 0, 327680, 7, 0, 327685, 3, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 327698, 0, 0, 327699, 0, 0, 327700, 0, 0, 327701, 4, 0, 327706, 7, 0, 393216, 7, 0, 393221, 7, 0, 393237, 7, 0, 393242, 7, 0, 458752, 7, 0, 458757, 7, 0, 458773, 7, 0, 458778, 7, 0, 524288, 7, 0, 524293, 7, 0, 524309, 7, 0, 524314, 7, 0, 589824, 7, 0, 589829, 7, 0, 589845, 7, 0, 589850, 7, 0, 655360, 7, 0, 655365, 7, 0, 655381, 7, 0, 655386, 7, 0, 720896, 7, 0, 720901, 7, 0, 720917, 7, 0, 720922, 7, 0, 786432, 7, 0, 786437, 7, 0, 786453, 7, 0, 786458, 7, 0, 851968, 7, 0, 851973, 7, 0, 851989, 7, 0, 851994, 7, 0, 917504, 7, 0, 917509, 7, 0, 917525, 7, 0, 917530, 7, 0, 983040, 7, 0, 983045, 7, 0, 983061, 7, 0, 983066, 7, 0, 1048576, 7, 0, 1048581, 8, 0, 1048597, 8, 0, 1048602, 7, 0, 1114112, 7, 0, 1114123, 9, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 10, 0, 1114138, 7, 0, 1179648, 7, 0, 1179674, 7, 0, 1245184, 7, 0, 1245210, 7, 0, 1310720, 7, 0, 1310746, 7, 0, 1376256, 7, 0, 1376282, 7, 0, 1441792, 7, 0, 1441818, 7, 0, 1507328, 7, 0, 1507354, 7, 0, 1572864, 1, 0, 1572865, 0, 0, 1572866, 0, 0, 1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1572879, 0, 0, 1572880, 0, 0, 1572881, 0, 0, 1572882, 0, 0, 1572883, 0, 0, 1572884, 0, 0, 1572885, 0, 0, 1572886, 0, 0, 1572887, 0, 0, 1572888, 0, 0, 1572889, 0, 0, 1572890, 2, 0 )
 [connection signal="animation_finished" from="Bombs/Bomb0/Bomb" to="Bombs/Bomb0" method="_on_Bomb_animation_finished"]
 [connection signal="animation_finished" from="Bombs/Bomb1/Bomb" to="Bombs/Bomb1" method="_on_Bomb_animation_finished"]
 [connection signal="animation_finished" from="Bombs/Bomb2/Bomb" to="Bombs/Bomb2" method="_on_Bomb_animation_finished"]
