@@ -234,7 +234,7 @@ func _on_Area2D_area_entered(area):
 		# Supprime le bonus
 		area.get_parent().queue_free()
 		update_score(1000)
-		if Constants.lives < 5:
+		if Constants.lives < 7:
 			Constants.lives += 1
 	elif area.name == 'CollideBonusB':
 		# Desactive la zone de collision

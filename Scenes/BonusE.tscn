@@ -27,6 +27,7 @@ script = ExtResource( 1 )
 position = Vector2( -1.59707, -1.36891 )
 scale = Vector2( 2.86538, 2.86538 )
 frames = SubResource( 1 )
+frame = 3
 playing = true
 
 [node name="CollideBonusE" type="Area2D" parent="Sprite"]
