@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/01 Title.wav-8981a5f1584abe5db4187fa45c5640cb.sample"
+
+[deps]
+
+source_file="res://Sounds/DRILLBOMBJACK/01 Title.wav"
+dest_files=[ "res://.import/01 Title.wav-8981a5f1584abe5db4187fa45c5640cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

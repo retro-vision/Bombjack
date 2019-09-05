@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/03 Ringo no Mori no Koneko Tachi (BGM 1).wav-ac9b5924d0e2b5862b37271f97681d8b.sample"
+
+[deps]
+
+source_file="res://Sounds/DRILLBOMBJACK/03 Ringo no Mori no Koneko Tachi (BGM 1).wav"
+dest_files=[ "res://.import/03 Ringo no Mori no Koneko Tachi (BGM 1).wav-ac9b5924d0e2b5862b37271f97681d8b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

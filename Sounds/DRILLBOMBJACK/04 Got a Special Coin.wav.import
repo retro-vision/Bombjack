@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/04 Got a Special Coin.wav-dbf3bbf04f2e8f0c77ee7251d17a91a1.sample"
+
+[deps]
+
+source_file="res://Sounds/DRILLBOMBJACK/04 Got a Special Coin.wav"
+dest_files=[ "res://.import/04 Got a Special Coin.wav-dbf3bbf04f2e8f0c77ee7251d17a91a1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

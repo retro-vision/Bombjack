@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/09 Special Bonus.wav-cfc4b5ef37d4868ddd555738f3c05748.sample"
+
+[deps]
+
+source_file="res://Sounds/DRILLBOMBJACK/09 Special Bonus.wav"
+dest_files=[ "res://.import/09 Special Bonus.wav-cfc4b5ef37d4868ddd555738f3c05748.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
