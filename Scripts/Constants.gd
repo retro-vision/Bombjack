@@ -13,6 +13,7 @@ const SPEED_ENEMY = Vector2(40,40)
 var PLAY_SOUND
 # Varibles initialisées dans Menu.gd
 var level	= 1 # Niveau courant
+var current_level = 1 # Niveau à afficher dans le panneau
 var score	= 0 # Score courant
 var lives	= 3 # Total des vies
 var NbBombs	= 0 # Nombres de bombes gobées

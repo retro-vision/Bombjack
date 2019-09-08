@@ -8,17 +8,28 @@ func _ready():
 	clear()
 	grab_focus()
 	
+func printHiScore():
+	print('AFFICHE SCORES')
+	print('==============')
+	var list = range(MAX_SCORE)
+	list.invert()
+	for item in list:
+		print(Constants.hiScores[item][0]," ", Constants.hiScores[item][1]," ",Constants.hiScores[item][2])
+	
 func addScore():
 	var namePlayer = get_text()
 	var list = range(MAX_SCORE)
-	list.invert()
+#	list.invert()
+	print('Ajout score')
+	print(Constants.hiScores)
 	for item in list:
 		if Constants.score > Constants.hiScores[item][0]:
 			# Décale le reste des scores
 			var list2 = range(item, MAX_SCORE-1)
-			var itemBKP = item
-			print(list2)
+#			var itemBKP = item
 			list2.invert()
+			print('Liste2 ', list2)
+			print('Item ', item)
 			for item2 in list2:
 				# Score
 				Constants.hiScores[item2+1][0] = Constants.hiScores[item2][0]
@@ -33,6 +44,8 @@ func addScore():
 			Constants.hiScores[item][1] = namePlayer
 			# Level
 			Constants.hiScores[item][2] = Constants.level
+			break
+	print(Constants.hiScores)
 
 func saveScore():
 	print('Ecrit les nouveau scores')

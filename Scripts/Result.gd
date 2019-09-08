@@ -44,6 +44,7 @@ func removeLevel():
 
 func nextLevel():
 	Constants.level += 1
+	Constants.current_level += 1
 	var nextLevel = File.new()
 	if nextLevel.file_exists('res://Scenes/Level'+str(Constants.level)+'.tscn') == false:
 	# On retourne au level 1 si fin de tous les levels

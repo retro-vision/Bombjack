@@ -368,7 +368,7 @@ func enemyToBonus():
 	$'/root/Game/Bonus/PowerBallP'.queue_free()
 #	Constants.powerballActive = false
 #	Constants.fireBombs = 0
-	Constants.powerballPoint = 0
+
 	if Constants.PLAY_SOUND == true:
 		$SpecialCoin.play()
 		var zic = get_node('/root/Game/Bonus/PowerBallP/PowerballSound')

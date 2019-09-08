@@ -118,7 +118,7 @@ func _on_timer_timeout():
 func update_level():
 	var num_level=get_node('/root/Game/CanvasLayer/Level')
 	if num_level!=null:
-		num_level.set_text('%02d'%(Constants.level)) # Formate le numéro de level
+		num_level.set_text('%02d'%(Constants.current_level)) # Formate le numéro de level
 	
 func _input(event):
 	# Retour au menu
